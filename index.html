@@ -1,0 +1,110 @@
+<!-- GIVEN a weather dashboard with form inputs
+WHEN I search for a city
+THEN I am presented with current and future conditions for that city and that city is added to the search history
+WHEN I view current weather conditions for that city
+THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+WHEN I view the UV index
+THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+WHEN I view future weather conditions for that city
+THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, and the humidity
+WHEN I click on a city in the search history
+THEN I am again presented with current and future conditions for that city
+WHEN I open the weather dashboard
+THEN I am presented with the last searched city forecast -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+       <!-- Foundation CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+  integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+<!-- jQuery and javaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<!-- Compressed JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+  integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o=" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+
+<!--Font-->
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+    <title>Weather Search</title>
+
+</head>
+
+<body>
+
+<!-- Header Image -->
+<div class="holy-grail-grid">
+  <div class="holy-grail-header"><img a href="https://webcomicms.net/clipart-10076378-weather-report-png-transparent-images"><img class="img img-responsive" typeof="foaf:Image" src="https://webcomicms.net/sites/default/files/clipart/176072/weather-report-png-transparent-images-176072-6206545.png" width="400" height="100"
+    class="d-inline-block align-top"alt="Weather Report PNG Transparent Images 6 - 612 X 244" title="Weather Report PNG Transparent Images 6 - 612 X 244" /></a> 
+  </div>
+
+    <!-- Left column -->
+
+    <div class="holy-grail-left">
+
+        <!-- City search and History list -->
+        <h5 >Search For Your City</h5>
+
+        <div class="input-group input-group-rounded">
+            <input class="input-group-field" id="titleInput" type="text">
+            <div class="input-group-button">
+              <input type="submit" class="button" id="searchbtn" value="Search">
+            </div> 
+        </div>
+
+        <!-- store previously searched cities-->
+        <div class="city-pull">
+    
+        </div>
+          
+    
+      </div>
+  
+  <!-- API Search/Populate column -->
+  <div class="holy-grail-middle">
+      <H5> Weather Report </H5>
+    <div class="columns medium-12">
+    
+        <!--API search result populate area -->
+
+        <div class="work-feature-block row main-div">
+         
+        </div>
+    
+   </div>
+  </div>
+
+  
+    
+</div>
+    <!-- Footer -->
+    <div class="holy-grail-footer">
+        <h6>Weather Data provided by OpenWeather API</h6>
+        
+        <h6> 2020 Annastasshia Ames. All rights reserved.</h6>
+      </div>
+  
+    </div>
+  
+  
+   <!-- linked javascript -->
+    <script src="./script.js"></script>
+  
+</body>
+</html>
